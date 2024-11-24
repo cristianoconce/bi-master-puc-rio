@@ -1,7 +1,8 @@
 # Turismo Inteligente RJ: Uma Abordagem Integrada com RAG e Otimização de Planejamento
 
-#### Aluno: [Cristiano Conceição](https://github.com/cristianoconce)
-#### Orientadora: [Evelyn Batista](https://github.com/evysb).
+#### Aluno: [Nome](https://github.com/link_do_github)
+#### Orientadora: [Nome Sobrenome](https://github.com/link_do_github).
+#### Co-orientador(/a/es/as): [Nome Sobrenome](https://github.com/link_do_github). <!-- caso não aplicável, remover esta linha -->
 
 ---
 
