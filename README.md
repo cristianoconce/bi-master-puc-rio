@@ -107,7 +107,7 @@ Top 3 melhores respostas:<br />
 2. Resultados da Otimização de Planejamento
 Na segunda etapa, o algoritmo de otimização baseado em métodos evolutivos foi avaliado em cenários com diferentes números de pontos turísticos selecionados pelos usuários.
 
-Geramos uma matriz entre as distâncias de cada ponto turístico:<br />
+Geramos uma matriz entre as distâncias de cada ponto turístico em Km:<br />
 ![image](https://github.com/user-attachments/assets/63944b6d-0eac-4be1-9648-e36777d59b9e)
 
 
