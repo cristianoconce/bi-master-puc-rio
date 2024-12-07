@@ -77,21 +77,57 @@ Alta Eficiência na Busca Semântica: As consultas realizadas foram respondidas 
 Personalização das Respostas: O modelo foi capaz de adaptar as respostas de acordo com as preferências do turista, como o interesse por locais históricos, praias ou eventos culturais.
 Escalabilidade: O Milvus demonstrou um desempenho consistente mesmo com grandes volumes de dados, garantindo a viabilidade da solução em um cenário com milhares de pontos turísticos e descrições associadas.
 
+Exemplos de busca por informações no RAG:
+
+No Milvus faremos a gravação dos dados com o seguinte schema:<br /><br />
+
+ID - ID será uma chave primária gerada automaticamente.<br />
+subject - Assunto para categoria de um contexto de negócio.<br />
+text - O texto gravado com determinado contexto de negócio.<br />
+vector - Estrutura de dados vetorial que vamos decodificar o texto que será gravado no formato do embedding.<br /><br />
+
+
+Ponto turístico: Lagoa Rodrigo de Freitas.<br />
+Pergunta do usuário: nível de vida populacional<br />
+Top 3 melhores respostas:<br />
+![image](https://github.com/user-attachments/assets/0f54918b-dc82-44e1-ba93-28e74ed37cff)
+
+Ponto turístico: Praia de Copacabana.<br />
+Pergunta do usuário: em termos populacionais<br />
+Top 3 melhores respostas:<br />
+![image](https://github.com/user-attachments/assets/011b4310-c2f4-4115-b0ad-90566401d531)
+
+Ponto turístico: Praia da Barra da Tijuca.<br />
+Pergunta do usuário: estrutura e arquitetura<br />
+Top 3 melhores respostas:<br />
+![image](https://github.com/user-attachments/assets/4efdd2c6-1334-4f98-9af4-ffaf49d9f1fc) 
+<br /><br />
+
 
 2. Resultados da Otimização de Planejamento
 Na segunda etapa, o algoritmo de otimização baseado em métodos evolutivos foi avaliado em cenários com diferentes números de pontos turísticos selecionados pelos usuários.
 
-Indicadores de Desempenho:
+Geramos uma matriz entre as distâncias de cada ponto turístico:<br />
+![image](https://github.com/user-attachments/assets/63944b6d-0eac-4be1-9648-e36777d59b9e)
+
+
+Indicadores de Desempenho:<br />
 Redução do Custo Total de Deslocamento: A melhor rota foi indicada pelos pontos turísticos 'Praça Mauá RJ', 'Pão de açucar RJ', 'Praia de Copacabana RJ',
        'Arpoador RJ', 'Praia de Ipanema RJ', 'Lagoa Rodrigo de Freitas RJ',
-       'Cristo Redentor RJ', 'Praia da Barra da Tijuca'.
+       'Cristo Redentor RJ', 'Praia da Barra da Tijuca'. <br />
+
+Gráfico da melhor função objetivo: <br />
+![image](https://github.com/user-attachments/assets/8ac2b247-ae9d-4425-ae36-67657533e17c)
+
 
 ### 4. Conclusões
 
 4. Integração das Soluções
 A integração entre o sistema de informações baseado em RAG e o otimizador de rotas resulta em uma experiência completa para o turista. O modelo identifica os pontos turísticos mais relevantes e, em seguida, organiza o trajeto de maneira eficiente, considerando preferências e restrições. Essa abordagem proporciona economia de tempo e custo, além de maximizar o aproveitamento das atrações da cidade.
 
-A integração entre o modelo RAG e a otimização de planejamento foi testada em um cenário completo, simulando a experiência de um turista que seleciona 8 pontos turísticos para visitar. Os resultados mostraram que:
+A integração entre o modelo RAG e a otimização de planejamento foi testada em um cenário completo, simulando a experiência de um turista que seleciona 8 pontos turísticos para visitar. 
+
+Os resultados mostraram que:
 
 Experiência do Usuário: A combinação de informações detalhadas e rotas otimizadas aumentou a praticidade e a satisfação dos usuários no planejamento de seus passeios.
 Eficiência Operacional: A solução reduziu significativamente o tempo total necessário para planejar o roteiro, oferecendo uma abordagem automatizada e precisa.
