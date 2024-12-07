@@ -33,7 +33,9 @@ Diante disso, este trabalho propõe uma abordagem inovadora para auxiliar turist
 1.1 Retrieval-Augmented Generation (RAG) e Banco de Dados Vetorial
 O modelo proposto utiliza a abordagem Retrieval-Augmented Generation (RAG) para enriquecer a experiência dos turistas com informações detalhadas e personalizadas. Nesse contexto, o modelo baseia-se em representações vetoriais de textos e imagens associadas aos pontos turísticos, permitindo a busca eficiente e semântica de informações relevantes. Para isso, emprega-se o Milvus, um banco de dados vetorial altamente escalável e otimizado para consultas de similaridade.
 
-O Milvus armazena vetores gerados a partir de embeddings de texto ou imagens utilizando modelos de aprendizado profundo, como BERT ou CLIP. A busca no banco é realizada com base na métrica de distância Euclidiana (L2), que mede a similaridade entre os vetores representativos das consultas do usuário e os pontos turísticos armazenados. Esse método garante que as informações retornadas sejam altamente relevantes e contextualizadas, fornecendo recomendações precisas aos turistas.
+O Milvus armazena vetores gerados a partir de embeddings de texto ou imagens utilizando modelos de aprendizado profundo, como BERT ou CLIP. A busca no banco é realizada com base na métrica de distância Euclidiana (L2), que mede a similaridade entre os vetores representativos das consultas do usuário e os pontos turísticos armazenados. Esse método garante que as informações retornadas sejam altamente relevantes e contextualizadas, fornecendo recomendações precisas aos turistas.<br />
+
+<img src="https://milvus.io/images/embedding.png" alt="Distância Euclidiana (L2)" />
 
 Para implementar a funcionalidade de busca, o processo segue os seguintes passos:
 
